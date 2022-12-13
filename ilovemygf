@@ -437,6 +437,7 @@ end)
 -- //
 return Aiming
 
+
 	while wait() do
         if getgenv().AutoPrediction == true then	
         local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()	
