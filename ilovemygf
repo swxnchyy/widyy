@@ -443,47 +443,47 @@ return Aiming
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 225 then	
-getgenv().Prediction = 1.6	
+getgenv().Prediction = 0.17	
 elseif ping < 215 then	
-getgenv().Prediction = 1.	
+getgenv().Prediction = 0.17	
 	elseif ping < 205 then
-getgenv().Prediction = 1.0	
+getgenv().Prediction = 0.17	
 	elseif ping < 190 then
-getgenv().Prediction = 0.10	
+getgenv().Prediction = 0.17	
 elseif ping < 180 then	
-getgenv().Prediction = 0.12	
+getgenv().Prediction = 0.16	
 	elseif ping < 170 then
-getgenv().Prediction = 0.15	
+getgenv().Prediction = 0.16	
 	elseif ping < 160 then
-getgenv().Prediction = 0.18	
+getgenv().Prediction = 0.17	
 	elseif ping < 150 then
 getgenv().Prediction = 0.110	
 elseif ping < 140 then	
-getgenv().Prediction = 0.113	
+getgenv().Prediction = 0.1622	
 elseif ping < 130 then	
-getgenv().Prediction = 0.116	
+getgenv().Prediction = 0.16	
 elseif ping < 120 then	
-getgenv().Prediction = 0.120	
+getgenv().Prediction = 0.1599	
 elseif ping < 110 then	
-getgenv().Prediction = 0.124	
+getgenv().Prediction = 0.1588	
 elseif ping < 105 then	
-getgenv().Prediction = 0.127	
+getgenv().Prediction = 0.15677	
 elseif ping < 90 then	
-getgenv().Prediction = 0.130	
+getgenv().Prediction = 0.1522	
 elseif ping < 80 then	
-getgenv().Prediction = 0.133	
+getgenv().Prediction = 0.14	
 elseif ping < 70 then	
 getgenv().Prediction = 0.136	
 elseif ping < 60 then	
 getgenv().Prediction = 0.140	
 elseif ping < 50 then	
-getgenv().Prediction = 0.143	
+getgenv().Prediction = 0.146
 elseif ping < 40 then	
-getgenv().Prediction = 0.145	
+getgenv().Prediction = 0.16
 elseif ping < 30 then	
-getgenv().Prediction = 0.155	
+getgenv().Prediction = 0.16	
 elseif ping < 20 then	
-getgenv().Prediction = 0.157	
+getgenv().Prediction = 0.16	
         end	
         end	
 	end
