@@ -23,7 +23,7 @@ local CharacterAdded = LocalPlayer.CharacterAdded
 local CharacterAddedWait = CharacterAdded.Wait
 local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
 local RaycastParamsnew = RaycastParams.new
-local EnumRaycastFilterTypeBlacklist = Enum.RaycastFilterType.Blacklist
+local EnumRaycastFilterTypeBlacklist = Enum.RaycastFilterType.Blackl++ist
 local Raycast = Workspace.Raycast
 local GetPlayers = Players.GetPlayers
 local Instancenew = Instance.new
@@ -436,55 +436,3 @@ end)
 
 -- //
 return Aiming
-
-
-	while wait() do
-        if getgenv().AutoPrediction == true then	
-        local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()	
-        local split = string.split(pingvalue,'(')	
-local ping = tonumber(split[1])	
-if ping < 225 then	
-getgenv().Prediction = 0.17	
-elseif ping < 215 then	
-getgenv().Prediction = 0.17	
-	elseif ping < 205 then
-getgenv().Prediction = 0.17	
-	elseif ping < 190 then
-getgenv().Prediction = 0.17	
-elseif ping < 180 then	
-getgenv().Prediction = 0.16	
-	elseif ping < 170 then
-getgenv().Prediction = 0.16	
-	elseif ping < 160 then
-getgenv().Prediction = 0.17	
-	elseif ping < 150 then
-getgenv().Prediction = 0.110	
-elseif ping < 140 then	
-getgenv().Prediction = 0.1622	
-elseif ping < 130 then	
-getgenv().Prediction = 0.16	
-elseif ping < 120 then	
-getgenv().Prediction = 0.1599	
-elseif ping < 110 then	
-getgenv().Prediction = 0.1588	
-elseif ping < 105 then	
-getgenv().Prediction = 0.15677	
-elseif ping < 90 then	
-getgenv().Prediction = 0.1522	
-elseif ping < 80 then	
-getgenv().Prediction = 0.14	
-elseif ping < 70 then	
-getgenv().Prediction = 0.136	
-elseif ping < 60 then	
-getgenv().Prediction = 0.140	
-elseif ping < 50 then	
-getgenv().Prediction = 0.146
-elseif ping < 40 then	
-getgenv().Prediction = 0.16
-elseif ping < 30 then	
-getgenv().Prediction = 0.16	
-elseif ping < 20 then	
-getgenv().Prediction = 0.16	
-        end	
-        end	
-	end
